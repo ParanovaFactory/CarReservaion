@@ -71,7 +71,7 @@ The **Admin Panel** includes detailed statistics about the site's performance, u
 <p float="left">
   <img src="https://github.com/user-attachments/assets/30c0f0fa-9dde-45f7-b393-4b9043c24379" width="250" alt="CarBook Main Page 1" />
 
-  <img src="https://github.com/user-attachments/assets/4a91acf1-ace0-4dfa-9a32-f56e32dcec5" width="250" alt="CarBook Main Page 2" />
+  <img src="https://github.com/user-attachments/assets/a6ebf51a-bb77-4d2b-b87b-8337b27b6c12" width="250" alt="CarBook Main Page 2" />
   <img src="https://github.com/user-attachments/assets/7942d324-9a01-4d90-b9c6-03a89cf6d326" width="250" alt="About Us Page" />
 </p>
 
@@ -84,8 +84,7 @@ The **Admin Panel** includes detailed statistics about the site's performance, u
 <p float="left">
   <img src="https://github.com/user-attachments/assets/59eaa2c2-78ad-4856-8633-5b3c8250c5d3" width="250" alt="Car Detail Page" />
   <img src="https://github.com/user-attachments/assets/ca9354b2-74c1-4813-96a2-a155da34ee26" width="250" alt="Car Detail Page" />
-  <img src="![CarBook6](https://github.com/user-attachments/assets/61209cc5-9419-4102-a01b-d02f2ec6b451)
-" width="250" alt="Blog Overview Page" />
+  <img src="https://github.com/user-attachments/assets/61209cc5-9419-4102-a01b-d02f2ec6b451" width="250" alt="Blog Overview Page" />
 </p>
 
 <p float="left">
