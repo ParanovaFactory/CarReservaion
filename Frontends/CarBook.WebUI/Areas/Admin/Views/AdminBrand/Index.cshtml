@@ -1,0 +1,50 @@
+﻿@model List<ResultBrandDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Brand List</h4>
+                        <p class="card-subtitle mb-4">
+                            You can manage your brands here. You can add, edit, delete or search brands from this Page.
+                        </p>
+                        <div class="table-responsive">
+
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Brand</th>
+                                        <th>Operatıons</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.BrandId</td>
+                                            <td>@item.BrandName</td>
+                                            <td>
+                                                <a href="/Admin/AdminBrand/DeleteBrand/@item.BrandId" class="btn btn-outline-danger">Delete</a>
+                                                <a href="/Admin/AdminBrand/UpdateBrand/@item.BrandId" class="btn btn-outline-warning">Update</a>
+                                                <a href="#" class="btn btn-outline-dark">This Brand of Cars</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <br />
+                            <a href="/Admin/AdminBrand/CreateBrand" class="btn btn-outline-info">Add Brand</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

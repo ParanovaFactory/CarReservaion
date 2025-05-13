@@ -1,0 +1,36 @@
+﻿@model List<ResultCarFeatureDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Car Feature</h4>
+                        <p class="card-subtitle mb-4">
+                            You can manage your car feature here. You can remove and edit about from this Page.
+                        </p>
+                        <form method="post">
+                            @for (int i = 0; i < @Model.Count; i++)
+                            {
+                                <div class="form-check">
+                                    <input type="hidden" asp-for="@Model[i].CarFeatureId" />
+                                    <input type="hidden" asp-for="@Model[i].FeatureName" />
+                                    <input type="checkbox" asp-for="@Model[i].CarFeatureAvaileble" class="form-check-input" />
+                                    <label class="form-check-label" for="@Model[i].CarFeatureAvaileble">@Model[i].FeatureName</label>
+                                </div>
+                            }
+                            <br />
+                            <button class="btn btn-success">Update Car Feature</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

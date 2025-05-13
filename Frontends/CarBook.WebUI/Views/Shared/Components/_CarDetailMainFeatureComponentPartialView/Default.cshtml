@@ -1,0 +1,91 @@
+﻿@model ResultCarWithBrandsDto
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="row justify-content-center">
+	<div class="col-md-12">
+		<div class="car-details">
+			<div class="img rounded" style="background-image: url(@Model.CarBigImageUrl);"></div>
+			<div class="text text-center">
+				<h2>@Model.CarModel</h2>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md d-flex align-self-stretch ftco-animate">
+		<div class="media block-6 services">
+			<div class="media-body py-md-4">
+				<div class="d-flex mb-3 align-items-center">
+					<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-dashboard"></span></div>
+					<div class="text">
+						<h3 class="heading mb-0 pl-3">
+							Mileage
+							<span>@Model.CarKilometer</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md d-flex align-self-stretch ftco-animate">
+		<div class="media block-6 services">
+			<div class="media-body py-md-4">
+				<div class="d-flex mb-3 align-items-center">
+					<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-pistons"></span></div>
+					<div class="text">
+						<h3 class="heading mb-0 pl-3">
+							Transmission
+							<span>@Model.CarTransmission</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md d-flex align-self-stretch ftco-animate">
+		<div class="media block-6 services">
+			<div class="media-body py-md-4">
+				<div class="d-flex mb-3 align-items-center">
+					<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car-seat"></span></div>
+					<div class="text">
+						<h3 class="heading mb-0 pl-3">
+							Seats
+							<span>@Model.CarSeats Adults</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md d-flex align-self-stretch ftco-animate">
+		<div class="media block-6 services">
+			<div class="media-body py-md-4">
+				<div class="d-flex mb-3 align-items-center">
+					<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-backpack"></span></div>
+					<div class="text">
+						<h3 class="heading mb-0 pl-3">
+							Luggage
+							<span>@Model.CarLuggage Bags</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md d-flex align-self-stretch ftco-animate">
+		<div class="media block-6 services">
+			<div class="media-body py-md-4">
+				<div class="d-flex mb-3 align-items-center">
+					<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-diesel"></span></div>
+					<div class="text">
+						<h3 class="heading mb-0 pl-3">
+							Fuel
+							<span>@Model.CarFuel</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

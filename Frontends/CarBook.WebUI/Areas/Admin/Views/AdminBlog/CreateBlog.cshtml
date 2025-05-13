@@ -1,0 +1,52 @@
+﻿@model CreateBlogDto
+
+@{
+    ViewData["Title"] = "CreateBlog";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Create New Blog</h4>
+                        <p class="card-subtitle mb-4">
+                            You can create a new blog here. Please fill in the details below.
+                        </p>
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="exampleInputModel">Title</label>
+                                <input type="text" class="form-control" asp-for="BlogTitle" id="exampleInputModel" placeholder="Blog Title">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputBrand">Author</label>
+                                @Html.DropDownListFor(m => m.BlogAuthorId, (List<SelectListItem>)ViewBag.AuthorValues, new { @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputBrand">Category</label>
+                                @Html.DropDownListFor(m => m.BlogCategoryId, (List<SelectListItem>)ViewBag.CategoryValues, new { @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputCoverImageUrl">Date</label>
+                                <input type="date" class="form-control" asp-for="BlogCreatedDate" id="exampleInputDate" placeholder="Created Date">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputModel">Blog Description</label>
+                                <textarea class="form-control" asp-for="BlogContent" placeholder="Blog Description"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputBigImageUrl">Blog Image Url</label>
+                                <input type="text" class="form-control" asp-for="BlogCoverImageUrl" id="exampleInputBigImageUrl" placeholder="Url">
+                            </div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

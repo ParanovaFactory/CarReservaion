@@ -1,0 +1,64 @@
+﻿@model List<ResultBlogWithAuthorDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Blog List</h4>
+                        <p class="card-subtitle mb-4">
+                            You can manage your blog here. You can list, delete and edit blog from this Page.
+                        </p>
+                        <div class="table-responsive">
+
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Title</th>
+                                        <th>Author</th>
+                                        <th>Category</th>
+                                        <th>Content</th>
+                                        <th>Date</th>
+                                        <th>Image Url</th>
+                                        <th>Operatıons</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.BlogId</td>
+                                            <td>@item.BlogTitle</td>
+                                            <td>@item.BlogAuthorName</td>
+                                            <td>@item.BlogCategoryId</td>
+                                            <td>@item.BlogContent.Substring(0, Math.Min(20, @item.BlogContent.Length))</td>
+                                            <td>@item.BlogCreatedDate.ToString("dd/MM/yyyy")</td>
+                                            <td>@item.BlogCoverImageUrl.Substring(0, Math.Min(10, @item.BlogCoverImageUrl.Length))</td>
+                                            <td>
+                                                <a href="/Blog/BlogDetails/@item.BlogId" class="btn btn-outline-primary">Show</a>
+                                                <a href="/Admin/AdminCommnet/ListCommentByBlogId/@item.BlogId" class="btn btn-outline-secondary">Comments</a>
+                                                <a href="/Admin/AdminBlog/DeleteBlog/@item.BlogId" class="btn btn-outline-danger">Delete</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

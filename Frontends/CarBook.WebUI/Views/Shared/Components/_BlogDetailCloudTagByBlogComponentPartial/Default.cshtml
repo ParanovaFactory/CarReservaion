@@ -1,0 +1,13 @@
+﻿@model List<ResultTagCloudDto>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="tag-widget post-tag-container mb-5 mt-5">
+    <div class="tagcloud">
+        @foreach (var item in Model)
+        {
+            <a href="#" class="tag-cloud-link">@item.TagCloudTitle</a>
+        }
+    </div>
+</div>

@@ -1,0 +1,44 @@
+﻿@model List<ResultCarPricingWithCarDto>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="col-xl-6">
+    <div class="card">
+        <div class="card-body">
+
+            <h4 class="card-title">Car Pricing List</h4>
+            <p class="card-subtitle mb-4 font-size-13">
+                Transaction period from 21 July to 25 Aug
+            </p>
+
+            <div class="table-responsive">
+                <table class="table table-centered table-hover table-xl mb-0" id="recent-orders">
+                    <thead>
+                        <tr>
+                            <th class="border-top-0">#</th>
+                            <th class="border-top-0">Model</th>
+                            <th class="border-top-0">Brand</th>
+                            <th class="border-top-0">Daily</th>
+                            <th class="border-top-0">Weekly</th>
+                            <th class="border-top-0">Monthly</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="text-truncate">@item.CarId</td>
+                                <td class="text-truncate">@item.CarModel</td>
+                                <td class="text-truncate">@item.BrandName</td>
+                                <td class="text-truncate">@item.DailyPrice</td>
+                                <td class="text-truncate">@item.WeeklyPrice</td>
+                                <td class="text-truncate">@item.MonthlyPrice</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div> <!-- end card-body-->
+    </div> <!-- end card-->
+</div> <!-- end col -->

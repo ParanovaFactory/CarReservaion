@@ -1,0 +1,14 @@
+﻿@model List<ResultCategoryDto>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="sidebar-box ftco-animate">
+    <div class="categories">
+        <h3>Categories</h3>
+        @foreach (var item in Model)
+        {
+            <li><a href="#">@item.CategoryName <span></span></a></li>
+        }
+    </div>
+</div>

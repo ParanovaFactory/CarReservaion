@@ -1,0 +1,53 @@
+﻿@model CreateBookingDto
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/Index.cshtml";
+}
+@await Component.InvokeAsync("_BookingMainCoverComponentPartialView")
+
+<section class="ftco-section contact-section">
+    <div class="container">
+        <div class="row d-flex mb-12 contact-info">
+
+            <div class="col-md-12 block- mb-md-12">
+                <form class="bg-light p-5 contact-form" method="post">
+                    <input type="hidden" value="@ViewBag.CarId" asp-for="CarId">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" asp-for="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Surname" asp-for="Surname">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-mail" asp-for="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone" asp-for="Phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label">Pick-up location</label>
+                        @Html.DropDownListFor(m => m.PickUpLocationId, (List<SelectListItem>)ViewBag.LocationValues, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label">Drop-Off location</label>
+                        @Html.DropDownListFor(m => m.DropOffLocationId, (List<SelectListItem>)ViewBag.LocationValues, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Bithdate" asp-for="Age">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Driver License Year" asp-for="DriverLicense">
+                    </div>
+                    <div class="form-group">
+                        <textarea cols="30" rows="7" class="form-control" placeholder="Additional Inoformation" asp-for="Description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Booking" class="btn btn-primary py-3 px-5">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,26 @@
+﻿@model ResultBlogDto
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="col-md-8 ftco-animate">
+
+    <p>
+        <img src="@Model.BlogCoverImageUrl" alt="" class="img-fluid">
+    </p>
+    <h2 class="mb-3">@Model.BlogTitle</h2>
+    <p>@Model.BlogContent</p>
+
+    @await Component.InvokeAsync("_BlogDetailCloudTagByBlogComponentPartial", new { id = ViewBag.blogid })
+
+    @await Component.InvokeAsync("_BlogDetailAuthorComponentPartial", new { id = ViewBag.blogid })
+
+    <div class="pt-5 mt-5">
+
+        @await Component.InvokeAsync("_BlogDetailCommentComponentPartial", new { id = ViewBag.blogid })
+
+        @await Html.PartialAsync("~/Views/Blog/AddComment.cshtml", new { id = ViewBag.blogid })
+    </div>
+</div>
+
+

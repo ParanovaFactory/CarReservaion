@@ -1,0 +1,48 @@
+﻿@model List<ResultContactDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Message Details: @ViewBag.Id</h4>
+                        <p class="card-subtitle mb-4">
+                            You can list comments on this Page.
+                        </p>
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <h5 class="card-header">@item.ContactName</h5>
+                                    <div class="card-body">
+                                        <h4 class="card-title">@item.ContactEmail</h4>
+                                        <h4 class="card-title">@item.ContactSubject</h4>
+                                        <p class="card-text">
+                                            @item.ContactMessage
+                                        </p>
+                                    </div>
+                                    <div class="card-footer text-muted">
+                                        @item.ContactSendDate.ToString("dd/MM/yyyy")
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+

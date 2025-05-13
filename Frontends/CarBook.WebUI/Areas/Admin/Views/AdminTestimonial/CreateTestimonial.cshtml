@@ -1,0 +1,47 @@
+﻿@model CreateTestimonialDto
+
+@{
+    ViewData["Title"] = "CreateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Create New Testimonial</h4>
+                        <p class="card-subtitle mb-4">
+                            You can create a new testimonial here. Please fill in the details below.
+                        </p>
+
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="exampleInputModel">Testimonial Name</label>
+                                <input type="text" class="form-control" asp-for="TestimonialName" placeholder="Testimonial Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputModel">Testimonial Title</label>
+                                <input type="text" class="form-control" asp-for="TestimonialTitle" placeholder="Testimonial Title">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputModel">Testimonial Comment</label>
+                                <textarea class="form-control" asp-for="TestimonialComment" placeholder="Testimonial Comment"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputModel">Testimonial Image URL</label>
+                                <input type="text" class="form-control" asp-for="TestimonialImageUrl" placeholder="Testimonial Image URL">
+                            </div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

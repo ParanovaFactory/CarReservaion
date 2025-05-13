@@ -1,0 +1,55 @@
+﻿@model List<ResultTagCloudDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Tag List</h4>
+                        <p class="card-subtitle mb-4">
+                            You can manage your tags  here. You can add, list, delete and edit tags from this Page.
+                        </p>
+                        <div class="table-responsive">
+
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Title</th>
+                                        <th>Operatıons</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.TagCloudId</td>
+                                            <td>@item.TagCloudTitle</td>
+                                            <td>
+                                                <a href="/Admin/AdminTagCloud/UpdateTagCloud/@item.TagCloudId" class="btn btn-outline-warning">Update</a>
+                                                <a href="/Admin/AdminTagCloud/DeleteTagCloud/@item.TagCloudId" class="btn btn-outline-danger">Delete</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <br />
+                            <a href="/Admin/AdminTagCloud/CreateTagCloud" class="btn btn-outline-info">Add Tag Cloud</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

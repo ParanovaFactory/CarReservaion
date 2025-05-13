@@ -1,0 +1,39 @@
+﻿@model List<ResultCommetDto>
+@{
+    ViewData["Title"] = "ListCommentByBlogId";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Commnet List By Blog Id: @ViewBag.id</h4>
+                        <p class="card-subtitle mb-4">
+                            You can manage comments on the blog here. You can deactivate and activate comments from this Page.
+                        </p>
+                        @foreach (var item in Model)
+                        {
+                            count++;
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <h5 class="card-header">Comment - @count</h5>
+                                    <div class="card-body">
+                                        <h4 class="card-title">@item.CommentName</h4>
+                                        <p class="card-text">
+                                            @item.CommentDescription
+                                        </p>
+                                        <a href="/Admin/AdminCommnet/DeleteComment/@item.CommentId" class="btn btn-danger waves-effect waves-light">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

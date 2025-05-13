@@ -1,0 +1,64 @@
+﻿@model List<ResultTestimonialDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Testimonial List</h4>
+                        <p class="card-subtitle mb-4">
+                            You can manage your testimonial here. You can add, list, delete and edit testimonial from this Page.
+                        </p>
+                        <div class="table-responsive">
+
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Title</th>
+                                        <th>Comment</th>
+                                        <th>Image url</th>
+                                        <th>Operations</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.TestimonialId</td>
+                                            <td>@item.TestimonialName</td>
+                                            <td>@item.TestimonialTitle</td>
+                                            <td>@item.TestimonialComment.Substring(0, Math.Min(20, @item.TestimonialComment.Length))</td>
+                                            <td>@item.TestimonialImageUrl.Substring(0, Math.Min(20, @item.TestimonialImageUrl.Length))</td>
+                                            <td>
+                                                <a href="/Admin/AdminTestimonial/UpdateTestimonial/@item.TestimonialId" class="btn btn-outline-warning">Update</a>
+                                                <a href="/Admin/AdminTestimonial/DeleteTestimonial/@item.TestimonialId" class="btn btn-outline-danger">Delete</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <br />
+                            <a href="/Admin/AdminTestimonial/CreateTestimonial" class="btn btn-outline-info">Add Testimonial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+

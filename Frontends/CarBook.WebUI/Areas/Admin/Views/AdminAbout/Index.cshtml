@@ -1,0 +1,64 @@
+﻿@model List<ResultAboutDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">About List</h4>
+                        <p class="card-subtitle mb-4">
+                            You can manage your about here. You can add and edit about from this Page.
+                        </p>
+                        <div class="table-responsive">
+
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Image Url</th>
+                                        <th>Operatıons</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.aboutId</td>
+                                            <td>@item.aboutTitle</td>
+                                            <td>@item.aboutDescription.Substring(0, Math.Min(10, @item.aboutDescription.Length))</td>
+                                            <td>@item.aboutImageUrl.Substring(0, Math.Min(10, @item.aboutImageUrl.Length))</td>
+                                            <td>
+                                                <a href="/Admin/AdminAbout/UpdateAbout/@item.aboutId" class="btn btn-outline-warning">Update</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <br />
+                            @foreach (var item in Model)
+                            {
+                                @if (@item.aboutId != null)
+                                {
+                                    <a href="/Admin/AdminAbout/CreateAbout" class="btn btn-outline-info" style="display: none;">Add About</a>
+                                }
+                                else
+                                {
+                                    <a href="/Admin/AdminAbout/CreateAbout" class="btn btn-outline-info">Add About</a>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

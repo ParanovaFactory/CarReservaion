@@ -1,0 +1,26 @@
+﻿@model List<ResultCarFeatureDto>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+
+<div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-6">
+                <ul class="features">
+                    @if (item.CarFeatureAvaileble == true)
+                    {
+                        <li class="check"><span class="ion-ios-checkmark"></span>@item.FeatureName</li>
+                    }
+                    else
+                    {
+                        <li class="remove"><span class="ion-ios-close"></span>@item.FeatureName</li>
+                    }
+                </ul>
+            </div>
+        }
+    </div>
+</div>

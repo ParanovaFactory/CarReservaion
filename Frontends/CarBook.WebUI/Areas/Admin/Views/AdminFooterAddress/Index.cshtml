@@ -1,0 +1,70 @@
+﻿@model List<ResultFooterAddressDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Footer Address List</h4>
+                        <p class="card-subtitle mb-4">
+                            You can manage your footer address here. You can add and edit footer address from this Page.
+                        </p>
+                        <div class="table-responsive">
+
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Description</th>
+                                        <th>Address</th>
+                                        <th>Phone</th>
+                                        <th>E-Mail</th>
+                                        <th>Operatıons</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.FooterAddressId</td>
+                                            <td>@item.FooterAddressDesciription.Substring(0, Math.Min(20, @item.FooterAddressDesciription.Length))</td>
+                                            <td>@item.FooterAddressAddress</td>
+                                            <td>@item.FooterAddressPhone</td>
+                                            <td>@item.FooterAddressEmail</td>
+                                            <td>
+                                                <a href="/Admin/AdminFooterAddress/UpdateFooterAddress/@item.FooterAddressId" class="btn btn-outline-warning">Update</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <br />
+                            @foreach (var item in Model)
+                            {
+                                @if (@item.FooterAddressId != null)
+                                {
+                                    <a href="/Admin/AdminFooterAddress/CreateFooterAddress" class="btn btn-outline-info" style="display: none;">Add Footer Address</a>
+                                }
+                                else
+                                {
+                                    <a href="/Admin/AdminFooterAddress/CreateFooterAddress" class="btn btn-outline-info">Add Footer Address</a>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
