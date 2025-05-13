@@ -69,7 +69,7 @@ The **Admin Panel** includes detailed statistics about the site's performance, u
 ## 🚗 Project Overview
 
 <p float="left">
-  <img src="./assets/images/carbook1.png" width="250" alt="CarBook Main Page 1" />
+  <img src="Frontends/CarBook.WebUI/Assets/images/carbook1.png" width="250" alt="CarBook Main Page 1" />
   <img src="./assets/images/carbook2.png" width="250" alt="CarBook Main Page 2" />
   <img src="./assets/images/carbook3.png" width="250" alt="About Us Page" />
 </p>
