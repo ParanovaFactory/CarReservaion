@@ -67,8 +67,7 @@ The **Admin Panel** includes detailed statistics about the site's performance, u
 ---
 
 ## 🚗 Project Overview
-
-![CarBook Main Page 1](Frontends/CarBook.WebUI/Assets/images/carbook1.png)
+![CarBook Main Page 1](Frontends/CarBook.WebUI/Assets/Images/carbook1.png)
 ![CarBook Main Page 2](Frontends/CarBook.WebUI/Assets/images/carbook2.png)
 ![About Us Page](Frontends/CarBook.WebUI/Assets/images/carbook3.png)
 
