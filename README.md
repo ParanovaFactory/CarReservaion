@@ -67,51 +67,37 @@ The **Admin Panel** includes detailed statistics about the site's performance, u
 ---
 
 ## 🚗 Project Overview
-![CarBook Main Page 1](https://github.com/user-attachments/assets/fe5c31d5-554d-4a42-b2c5-fa831df5d316)
-![CarBook Main Page 2](https://github.com/user-attachments/assets/bdb11319-de79-435a-a854-abb7ef6e5ac6)
-![About Us Page](https://github.com/user-attachments/assets/13868b95-5779-4300-8f26-fffbf3081612)
-![Pricing Page](https://github.com/user-attachments/assets/9f2909ab-0853-495f-bcbe-6aec0611819b)
-![Car Listing Page](https://github.com/user-attachments/assets/bc4a6256-9d9c-4a24-9b3d-a1bdabafa077)
-![Car Detail Page](https://github.com/user-attachments/assets/48abe9f6-de8e-4500-a9d2-7e4faf958619)
-![Car Detail Page](https://github.com/user-attachments/assets/306f2d45-d32b-4f58-9737-4f2f85b1547f)
-![Car Detail Page](https://github.com/user-attachments/assets/426c8d0a-4f10-4aa9-8b0f-c00cce58ca08)
-![Blog Detail Page](https://github.com/user-attachments/assets/80e4c1d8-01f7-4491-b437-88d260307337)
-![Blog Overview Page](https://github.com/user-attachments/assets/1c8b7050-e6db-4c4f-a0f8-8a5f43a89152)
-![Booking Form Page](https://github.com/user-attachments/assets/5215706e-84e9-4117-b4f6-dcd2b62c7c10)
-![Admin Panel - Car List](https://github.com/user-attachments/assets/afd3231f-739b-4ee0-a75e-a0d3c02814f5)
-![Admin Panel - Brand List](https://github.com/user-attachments/assets/4e8b8073-9110-4ec5-a14f-0e928bf9f963)
-![Admin Panel - Blog List](https://github.com/user-attachments/assets/0f7fb1ce-ec1f-40e8-abb8-1951d82dcea8)
-![Admin Panel - Category List](https://github.com/user-attachments/assets/e5839987-4b62-4fec-90e6-383ae18eaaf6)
 
 <p float="left">
   <img src="https://github.com/user-attachments/assets/30c0f0fa-9dde-45f7-b393-4b9043c24379" width="250" alt="CarBook Main Page 1" />
 
-  <img src="./assets/images/carbook2.png" width="250" alt="CarBook Main Page 2" />
-  <img src="./assets/images/carbook3.png" width="250" alt="About Us Page" />
+  <img src="https://github.com/user-attachments/assets/4a91acf1-ace0-4dfa-9a32-f56e32dcec5" width="250" alt="CarBook Main Page 2" />
+  <img src="https://github.com/user-attachments/assets/7942d324-9a01-4d90-b9c6-03a89cf6d326" width="250" alt="About Us Page" />
 </p>
 
 <p float="left">
-  <img src="./assets/images/carbook4.png" width="250" alt="Pricing Page" />
-  <img src="./assets/images/carbook5.png" width="250" alt="Car Listing Page" />
-  <img src="./assets/images/carbook13.png" width="250" alt="Car Detail Page" />
+  <img src="https://github.com/user-attachments/assets/9970e166-a2aa-4af4-a4e2-5d5341393c8f" width="250" alt="Pricing Page" />
+  <img src="https://github.com/user-attachments/assets/7b65c8a0-37a4-4c7f-bfca-0d7512e59f68" width="250" alt="Car Listing Page" />
+  <img src="https://github.com/user-attachments/assets/45dd80bb-2d77-4f5f-ab07-adf2641e39eb" width="250" alt="Car Detail Page" />
 </p>
 
 <p float="left">
-  <img src="./assets/images/carbook14.png" width="250" alt="Car Detail Page" />
-  <img src="./assets/images/carbook15.png" width="250" alt="Car Detail Page" />
-  <img src="./assets/images/carbook7.png" width="250" alt="Blog Detail Page" />
+  <img src="https://github.com/user-attachments/assets/59eaa2c2-78ad-4856-8633-5b3c8250c5d3" width="250" alt="Car Detail Page" />
+  <img src="https://github.com/user-attachments/assets/ca9354b2-74c1-4813-96a2-a155da34ee26" width="250" alt="Car Detail Page" />
+  <img src="![CarBook6](https://github.com/user-attachments/assets/61209cc5-9419-4102-a01b-d02f2ec6b451)
+" width="250" alt="Blog Overview Page" />
 </p>
 
 <p float="left">
-  <img src="./assets/images/carbook6.png" width="250" alt="Blog Overview Page" />
-  <img src="./assets/images/carbook8.png" width="250" alt="Booking Form Page" />
-  <img src="./assets/images/carbook9.png" width="250" alt="Admin Panel - Car List" />
+  <img src="https://github.com/user-attachments/assets/c3df9c80-7f7f-4b75-9e84-16051421e443" width="250" alt="Blog Detail Page" />
+  <img src="https://github.com/user-attachments/assets/6f567a75-1e39-4da6-a4d5-921bd3a75125" width="250" alt="Booking Form Page" />
+  <img src="https://github.com/user-attachments/assets/6af86870-6700-4910-84ae-c7dcbdacdad7" width="250" alt="Admin Panel - Car List" />
 </p>
 
 <p float="left">
-  <img src="./assets/images/carbook10.png" width="250" alt="Admin Panel - Brand List" />
-  <img src="./assets/images/carbook11.png" width="250" alt="Admin Panel - Blog List" />
-  <img src="./assets/images/carbook12.png" width="250" alt="Admin Panel - Category List" />
+  <img src="https://github.com/user-attachments/assets/dd759e73-c6c6-4d5b-850b-1ef7866c9d0e" width="250" alt="Admin Panel - Brand List" />
+  <img src="https://github.com/user-attachments/assets/6bca5a10-7433-4281-b4ac-f6d246274f86" width="250" alt="Admin Panel - Blog List" />
+  <img src="https://github.com/user-attachments/assets/9e6eb145-3b48-40f5-82ae-aba4f369d5db" width="250" alt="Admin Panel - Category List" />
 </p>
 
 
