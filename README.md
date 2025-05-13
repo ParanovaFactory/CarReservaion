@@ -68,35 +68,26 @@ The **Admin Panel** includes detailed statistics about the site's performance, u
 
 ## 🚗 Project Overview
 
-<p float="left">
-  <img src="Frontends/CarBook.WebUI/Assets/images/carbook1.png" width="250" alt="CarBook Main Page 1" />
-  <img src="./assets/images/carbook2.png" width="250" alt="CarBook Main Page 2" />
-  <img src="./assets/images/carbook3.png" width="250" alt="About Us Page" />
-</p>
+![CarBook Main Page 1](Frontends/CarBook.WebUI/Assets/images/carbook1.png)
+![CarBook Main Page 2](Frontends/CarBook.WebUI/Assets/images/carbook2.png)
+![About Us Page](Frontends/CarBook.WebUI/Assets/images/carbook3.png)
 
-<p float="left">
-  <img src="./assets/images/carbook4.png" width="250" alt="Pricing Page" />
-  <img src="./assets/images/carbook5.png" width="250" alt="Car Listing Page" />
-  <img src="./assets/images/carbook13.png" width="250" alt="Car Detail Page" />
-</p>
+![Pricing Page](Frontends/CarBook.WebUI/Assets/images/carbook4.png)
+![Car Listing Page](Frontends/CarBook.WebUI/Assets/images/carbook5.png)
+![Car Detail Page](Frontends/CarBook.WebUI/Assets/images/carbook13.png)
 
-<p float="left">
-  <img src="./assets/images/carbook14.png" width="250" alt="Car Detail Page" />
-  <img src="./assets/images/carbook15.png" width="250" alt="Car Detail Page" />
-  <img src="./assets/images/carbook7.png" width="250" alt="Blog Detail Page" />
-</p>
+![Car Detail Page](Frontends/CarBook.WebUI/Assets/images/carbook14.png)
+![Car Detail Page](Frontends/CarBook.WebUI/Assets/images/carbook15.png)
+![Blog Detail Page](Frontends/CarBook.WebUI/Assets/images/carbook7.png)
 
-<p float="left">
-  <img src="./assets/images/carbook6.png" width="250" alt="Blog Overview Page" />
-  <img src="./assets/images/carbook8.png" width="250" alt="Booking Form Page" />
-  <img src="./assets/images/carbook9.png" width="250" alt="Admin Panel - Car List" />
-</p>
+![Blog Overview Page](Frontends/CarBook.WebUI/Assets/images/carbook6.png)
+![Booking Form Page](Frontends/CarBook.WebUI/Assets/images/carbook8.png)
+![Admin Panel - Car List](Frontends/CarBook.WebUI/Assets/images/carbook9.png)
 
-<p float="left">
-  <img src="./assets/images/carbook10.png" width="250" alt="Admin Panel - Brand List" />
-  <img src="./assets/images/carbook11.png" width="250" alt="Admin Panel - Blog List" />
-  <img src="./assets/images/carbook12.png" width="250" alt="Admin Panel - Category List" />
-</p>
+![Admin Panel - Brand List](Frontends/CarBook.WebUI/Assets/images/carbook10.png)
+![Admin Panel - Blog List](Frontends/CarBook.WebUI/Assets/images/carbook11.png)
+![Admin Panel - Category List](Frontends/CarBook.WebUI/Assets/images/carbook12.png)
+
 
 ---
 
