@@ -32,7 +32,7 @@ This project is built using the following technologies:
 - 💥 **ASP.NET Core 8.0 Web API & MVC**  
 - 🏛️ **Onion Architecture**  
 - ⚙️ **CQRS, Mediator, Repository Pattern**  
-- 🔐 **JWT Authentication (Admin Login Information Username=admin_user, Password=securePassword123)**  
+- 🔐 **JWT Authentication (Admin Login Information)**  
 - 📡 **Live Data Tracking with SignalR**  
 - 🛡️ **Form Validation with FluentValidation**
 
